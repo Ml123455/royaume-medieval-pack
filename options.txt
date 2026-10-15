@@ -48,7 +48,7 @@ key_key.neoorigins.view_info:key.keyboard.f6
 key_key.neoorigins.edit_hud:key.keyboard.unknown
 key_key.neoorigins.open_creator:key.keyboard.unknown
 key_key.neoorigins.open_mob_creator:key.keyboard.unknown
-key_key.neoorigins.toggle_night_vision:key.keyboard.unknown
+key_key.neoorigins.toggle_night_vision:key.keyboard.f8
 key_key.neoorigins.hotkey.1:key.keyboard.unknown
 key_key.neoorigins.hotkey.2:key.keyboard.unknown
 key_key.neoorigins.hotkey.3:key.keyboard.unknown
