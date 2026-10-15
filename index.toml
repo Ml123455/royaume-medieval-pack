@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = "index.html"
-hash = "890d1a4254dd3c9d600ad9e95df9a5de1340ca2ae0c650a1d8d61c531b78ab6f"
-
-[[files]]
 file = "mods/animus.pw.toml"
 hash = "a680657b4fa5526744c2170f90a0788baa06a7a7b61eb765c5fd628f07be2d85"
 metafile = true
@@ -343,10 +339,6 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
 metafile = true
-
-[[files]]
-file = "packwiz-installer-bootstrap.jar"
-hash = "a8fbb24dc604278e97f4688e82d3d91a318b98efc08d5dbfcbcbcab6443d116c"
 
 [[files]]
 file = "resourcepacks/Goety-FR.zip"
