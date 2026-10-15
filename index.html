@@ -8,55 +8,99 @@
   :root{--bg:#faf8f4;--card:#fff;--text:#2a2118;--muted:#6b5d4d;--accent:#8a4b1c;--line:#e6dfd3;--code:#f1ece3}
   @media (prefers-color-scheme:dark){:root{--bg:#1b1713;--card:#25201a;--text:#f0e9de;--muted:#b3a692;--accent:#e0a265;--line:#3a3128;--code:#18140f}}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
-  main{max-width:680px;margin:0 auto;padding:32px 16px 64px}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+  main{max-width:700px;margin:0 auto;padding:32px 16px 64px}
   h1{font-size:1.7rem;margin:0 0 4px}
-  .sub{color:var(--muted);margin:0 0 28px}
-  ol{list-style:none;counter-reset:s;padding:0;margin:0}
-  li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 56px;margin:0 0 12px;position:relative}
-  li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
-  li b{display:block;margin-bottom:2px}
-  li p{margin:4px 0 0;color:var(--muted)}
+  .sub{color:var(--muted);margin:0 0 24px}
+  .etape{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 12px 16px;margin:0 0 14px}
+  .etape h2{font-size:1.1rem;margin:0 0 8px;display:flex;gap:10px;align-items:center}
+  .num{flex:none;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center;font-size:.95rem}
+  .etape ol{margin:0 0 4px;padding-left:22px}
+  .etape li{margin:6px 0}
+  .tag{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:1px 7px;font-weight:600;white-space:nowrap}
   a{color:var(--accent)}
-  .btn{display:inline-block;margin-top:8px;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:.95rem}
-  code{display:block;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;word-break:break-all;font:.85rem/1.4 ui-monospace,Consolas,monospace;color:var(--text)}
-  .note{margin-top:24px;padding:14px 16px;border-left:4px solid var(--accent);background:var(--card);border-radius:0 8px 8px 0;color:var(--muted)}
+  .btn{display:inline-block;margin:6px 0 4px;padding:9px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:.95rem}
+  code{display:block;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:8px 0;word-break:break-all;font:.85rem/1.4 ui-monospace,Consolas,monospace;color:var(--text)}
+  .note{margin-top:20px;padding:14px 16px;border-left:4px solid var(--accent);background:var(--card);border-radius:0 8px 8px 0;color:var(--muted)}
+  .note b{color:var(--text)}
+  .fait{color:var(--muted);margin:2px 0 6px;font-size:.95rem}
 </style>
 </head>
 <body>
 <main>
   <h1>Royaume médiéval RPG</h1>
-  <p class="sub">Installation à faire <b>une seule fois</b>. Ensuite, le jeu se met à jour tout seul à chaque lancement.</p>
+  <p class="sub">À faire <b>une seule fois</b>, dans l'ordre. Après ça, le jeu se met à jour tout seul à chaque lancement : tu n'auras plus rien à réinstaller.</p>
 
-  <ol>
-    <li>
-      <b>Installer Prism Launcher</b>
-      <p>Télécharge-le sur <a href="https://prismlauncher.org/download/">prismlauncher.org</a>, puis ajoute ton compte Microsoft (celui qui possède Minecraft Java).</p>
-    </li>
-    <li>
-      <b>Importer l'installeur</b>
-      <a class="btn" href="Royaume-installeur.mrpack" download>Télécharger l'installeur</a>
-      <p>Dans Prism : <i>Ajouter une instance</i> → <i>Importer</i> → choisis le fichier téléchargé. Une instance vide se crée, avec NeoForge.</p>
-    </li>
-    <li>
-      <b>Coller la ligne de mise à jour</b>
-      <p>Clic droit sur l'instance → <i>Modifier</i> → <i>Paramètres</i> → <i>Commandes personnalisées</i>. Coche la case, puis colle cette ligne dans <i>Commande de pré-lancement</i> :</p>
-      <code id="ligne">"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://ml123455.github.io/royaume-medieval-pack/pack.toml</code>
-      <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('ligne').textContent).then(()=>this.textContent='Copié !')">Copier la ligne</button>
-    </li>
-    <li>
-      <b>Régler la mémoire</b>
-      <p>Même fenêtre, section <i>Java</i> : mets la mémoire maximale à <b>5120 Mo</b> (ou 4096 si ton PC a 8 Go de RAM).</p>
-    </li>
-    <li>
-      <b>Lancer le jeu</b>
-      <p>Le premier lancement télécharge les mods (environ 270 Mo), c'est un peu long. Si une petite fenêtre s'ouvre, laisse-la finir. Ensuite, chaque lancement vérifie les nouveautés tout seul.</p>
-    </li>
-  </ol>
+  <div class="etape">
+    <h2><span class="num">1</span>Installer Prism Launcher</h2>
+    <ol>
+      <li>Va sur <a href="https://prismlauncher.org/download/">prismlauncher.org/download</a> et télécharge la version pour ton ordinateur.</li>
+      <li>Installe-le et ouvre-le.</li>
+      <li>En haut à droite, clique sur ton nom (ou <span class="tag">Comptes</span>) puis <span class="tag">Configurer les comptes</span> → <span class="tag">Ajouter un compte Microsoft</span> et connecte-toi avec le compte qui possède Minecraft Java.</li>
+    </ol>
+  </div>
+
+  <div class="etape">
+    <h2><span class="num">2</span>Créer l'instance avec l'installeur</h2>
+    <a class="btn" href="Royaume-installeur.mrpack" download>Télécharger l'installeur</a>
+    <ol>
+      <li>Dans Prism, clique sur <span class="tag">Ajouter une instance</span> (en haut à gauche).</li>
+      <li>Dans la colonne de gauche de la fenêtre, clique sur <span class="tag">Importer</span>.</li>
+      <li>Clique sur <span class="tag">Parcourir</span> et choisis le fichier <b>Royaume-installeur.mrpack</b> (il est dans ton dossier Téléchargements).</li>
+      <li>Clique sur <span class="tag">OK</span>. Une instance appelée <b>Royaume-installeur</b> apparaît dans la liste. Elle est vide pour l'instant, c'est normal.</li>
+    </ol>
+  </div>
+
+  <div class="etape">
+    <h2><span class="num">3</span>Coller la ligne de mise à jour</h2>
+    <p class="fait">C'est l'étape qui permet que le jeu se mette à jour tout seul.</p>
+    <ol>
+      <li>Fais un <b>clic droit</b> sur l'instance <b>Royaume-installeur</b>, puis clique sur <span class="tag">Modifier</span>.</li>
+      <li>Dans la colonne de gauche, clique sur <span class="tag">Paramètres</span>.</li>
+      <li>En haut de la fenêtre, clique sur l'onglet <span class="tag">Commandes personnalisées</span>.</li>
+      <li><b>Coche</b> la case <span class="tag">Remplacer les paramètres globaux</span>.</li>
+      <li>Clique dans le champ <span class="tag">Commande de pré-lancement</span> et colle cette ligne (avec les guillemets) :
+        <code id="ligne">"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://ml123455.github.io/royaume-medieval-pack/pack.toml</code>
+        <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('ligne').textContent).then(()=>this.textContent='Copié !')">Copier la ligne</button>
+      </li>
+      <li>Laisse les autres champs <b>vides</b>.</li>
+    </ol>
+  </div>
+
+  <div class="etape">
+    <h2><span class="num">4</span>Régler la mémoire</h2>
+    <ol>
+      <li>Dans la même fenêtre, clique sur l'onglet <span class="tag">Java</span>.</li>
+      <li>Coche la case pour personnaliser la mémoire (« Mémoire »).</li>
+      <li>Mets la mémoire <b>maximale</b> à <b>5120 Mo</b>. Si ton ordinateur a seulement 8 Go de RAM, mets <b>4096 Mo</b>.</li>
+      <li>Ferme la fenêtre : tout s'enregistre tout seul.</li>
+    </ol>
+  </div>
+
+  <div class="etape">
+    <h2><span class="num">5</span>Lancer le jeu</h2>
+    <ol>
+      <li>Sélectionne l'instance <b>Royaume-installeur</b> et clique sur <span class="tag">Lancer</span>.</li>
+      <li>Une petite fenêtre s'ouvre et <b>télécharge les mods</b> (environ 360 Mo). Ça peut prendre quelques minutes la première fois. <b>Ne la ferme pas</b> : elle se ferme toute seule quand elle a fini.</li>
+      <li>Minecraft démarre ensuite tout seul. Le chargement du jeu avec tous les mods prend 2 à 3 minutes.</li>
+    </ol>
+  </div>
+
+  <div class="etape">
+    <h2><span class="num">6</span>Entrer dans le serveur</h2>
+    <ol>
+      <li>Dans Minecraft, clique sur <span class="tag">Multijoueur</span> puis <span class="tag">Ajouter un serveur</span>.</li>
+      <li>Dans « Adresse du serveur », écris l'adresse que Marius t'a donnée <b>en privé</b>. Le nom, tu mets ce que tu veux.</li>
+      <li>Double-clique sur le serveur pour te connecter.</li>
+    </ol>
+  </div>
 
   <div class="note">
+    <b>Ensuite, à chaque fois :</b> tu cliques juste sur <b>Lancer</b>. Si Marius a ajouté des mods, ils se téléchargent tout seuls avant que le jeu démarre.
+    <br><br>
+    <b>Ça ne marche pas ?</b> Vérifie que la case « Remplacer les paramètres globaux » est bien cochée (étape 3) et que la ligne est collée en entier, avec les guillemets. Sinon, envoie une capture d'écran de l'erreur à Marius.
+    <br><br>
     <b>Pour alléger le jeu :</b> Options → Vidéo → Particules : <i>Minimal</i>, Météo : <i>Rapide</i>, Nuages : <i>Désactivés</i>, distance d'affichage entre 8 et 10.
-    <br><br>L'adresse du serveur t'est donnée en privé, elle n'est pas écrite ici.
   </div>
 </main>
 </body>
