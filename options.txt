@@ -19,7 +19,7 @@ key_key.goety.witch.brewCircle:key.keyboard.unknown
 key_key.goety.mount.roar:key.keyboard.unknown
 key_key.goety.mount.freeRoam:key.keyboard.unknown
 key_key.irons_spellbooks.spellbook_cast:key.keyboard.r
-key_key.irons_spellbooks.spell_wheel:key.keyboard.h
+key_key.irons_spellbooks.spell_wheel:key.keyboard.grave.accent
 key_key.irons_spellbooks.spell_wheel_toggle:key.keyboard.unknown
 key_key.irons_spellbooks.spell_bar_modifier:key.keyboard.unknown
 key_key.irons_spellbooks.spell_quick_cast_1:key.keyboard.keypad.1
@@ -128,3 +128,16 @@ key_key.neovitae.open_guide:key.keyboard.unknown
 key_key.lightmanscurrency.open_wallet:key.keyboard.unknown
 key_key.lightmanscurrency.portable_atm:key.keyboard.unknown
 key_key.lightmanscurrency.portable_terminal:key.keyboard.unknown
+key_keybindings.spell_engine.tooltip_details:key.keyboard.keypad.subtract
+key_keybindings.spell_engine.bypass_spell_hotbar:key.keyboard.left.alt
+key_keybindings.spell_engine.spell_hotbar_1:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_2:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_3:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_4:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_5:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_6:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_7:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_8:key.keyboard.unknown
+key_keybindings.spell_engine.spell_hotbar_9:key.keyboard.unknown
+key_key.simplytooltips.cycle_tab:key.keyboard.keypad.add
+key_key.simplytooltips.capture_gif:key.keyboard.unknown
