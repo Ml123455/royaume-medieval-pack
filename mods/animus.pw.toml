@@ -1,0 +1,13 @@
+name = "Animus"
+filename = "animusnv-1.21.1-5.2.21.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tL9SPLdV/versions/xmlKJLDQ/animusnv-1.21.1-5.2.21.jar"
+hash-format = "sha512"
+hash = "4ed2c1320b42817497185b357e1a45f8b5c89122130f5a8cc2ab0e6a2f73f0df1e0986eb8d94b11e45df46de3f9450c1b99a3adef1c24ecc3a615cf7bf175a79"
+
+[update]
+[update.modrinth]
+mod-id = "tL9SPLdV"
+version = "xmlKJLDQ"

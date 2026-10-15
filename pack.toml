@@ -1,0 +1,13 @@
+name = "Royaume médiéval RPG"
+author = "Marius"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "25ac2c01ecf8dd1e935655d7d06b58b702b2dc6a6ed11d68588752d619069c2d"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.259"

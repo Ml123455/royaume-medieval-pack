@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royaume médiéval RPG</title>
+<style>
+  :root{--bg:#faf8f4;--card:#fff;--text:#2a2118;--muted:#6b5d4d;--accent:#8a4b1c;--line:#e6dfd3;--code:#f1ece3}
+  @media (prefers-color-scheme:dark){:root{--bg:#1b1713;--card:#25201a;--text:#f0e9de;--muted:#b3a692;--accent:#e0a265;--line:#3a3128;--code:#18140f}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+  main{max-width:680px;margin:0 auto;padding:32px 16px 64px}
+  h1{font-size:1.7rem;margin:0 0 4px}
+  .sub{color:var(--muted);margin:0 0 28px}
+  ol{list-style:none;counter-reset:s;padding:0;margin:0}
+  li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 56px;margin:0 0 12px;position:relative}
+  li::before{content:counter(s);position:absolute;left:16px;top:16px;width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:grid;place-items:center}
+  li b{display:block;margin-bottom:2px}
+  li p{margin:4px 0 0;color:var(--muted)}
+  a{color:var(--accent)}
+  .btn{display:inline-block;margin-top:8px;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:.95rem}
+  code{display:block;background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-top:8px;word-break:break-all;font:.85rem/1.4 ui-monospace,Consolas,monospace;color:var(--text)}
+  .note{margin-top:24px;padding:14px 16px;border-left:4px solid var(--accent);background:var(--card);border-radius:0 8px 8px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Royaume médiéval RPG</h1>
+  <p class="sub">Installation à faire <b>une seule fois</b>. Ensuite, le jeu se met à jour tout seul à chaque lancement.</p>
+
+  <ol>
+    <li>
+      <b>Installer Prism Launcher</b>
+      <p>Télécharge-le sur <a href="https://prismlauncher.org/download/">prismlauncher.org</a>, puis ajoute ton compte Microsoft (celui qui possède Minecraft Java).</p>
+    </li>
+    <li>
+      <b>Importer l'installeur</b>
+      <a class="btn" href="Royaume-installeur.mrpack" download>Télécharger l'installeur</a>
+      <p>Dans Prism : <i>Ajouter une instance</i> → <i>Importer</i> → choisis le fichier téléchargé. Une instance vide se crée, avec NeoForge.</p>
+    </li>
+    <li>
+      <b>Coller la ligne de mise à jour</b>
+      <p>Clic droit sur l'instance → <i>Modifier</i> → <i>Paramètres</i> → <i>Commandes personnalisées</i>. Coche la case, puis colle cette ligne dans <i>Commande de pré-lancement</i> :</p>
+      <code id="ligne">"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://ml123455.github.io/royaume-medieval-pack/pack.toml</code>
+      <button class="btn" onclick="navigator.clipboard.writeText(document.getElementById('ligne').textContent).then(()=>this.textContent='Copié !')">Copier la ligne</button>
+    </li>
+    <li>
+      <b>Régler la mémoire</b>
+      <p>Même fenêtre, section <i>Java</i> : mets la mémoire maximale à <b>5120 Mo</b> (ou 4096 si ton PC a 8 Go de RAM).</p>
+    </li>
+    <li>
+      <b>Lancer le jeu</b>
+      <p>Le premier lancement télécharge les mods (environ 270 Mo), c'est un peu long. Si une petite fenêtre s'ouvre, laisse-la finir. Ensuite, chaque lancement vérifie les nouveautés tout seul.</p>
+    </li>
+  </ol>
+
+  <div class="note">
+    <b>Pour alléger le jeu :</b> Options → Vidéo → Particules : <i>Minimal</i>, Météo : <i>Rapide</i>, Nuages : <i>Désactivés</i>, distance d'affichage entre 8 et 10.
+    <br><br>L'adresse du serveur t'est donnée en privé, elle n'est pas écrite ici.
+  </div>
+</main>
+</body>
+</html>

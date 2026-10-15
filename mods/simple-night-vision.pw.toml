@@ -1,0 +1,13 @@
+name = "Simple Night Vision"
+filename = "simple-night-vision-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/5uUjzXhP/versions/74xDaiKK/simple-night-vision-1.0.1.jar"
+hash-format = "sha512"
+hash = "46408431dccccde61159688b7082bb1d357eca4d91f57d17558d2d5d17f634beb4450f5d1dc83e6c8371ab3f039d8fc0a3d60e8198a64010797c177a84af11c7"
+
+[update]
+[update.modrinth]
+mod-id = "5uUjzXhP"
+version = "74xDaiKK"

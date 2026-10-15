@@ -1,0 +1,13 @@
+name = "RPG Series Class Selection"
+filename = "class-selection-0.17.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/JJz0hMcN/versions/XVja0gr3/class-selection-0.17.jar"
+hash-format = "sha512"
+hash = "d912ed453c9fbb275b4d6039efc8a668779e24278d71236fdade107de6d0307a27d238e1f762ce720c3fbf5a010ed3047a781b2c3f2059caa3f6f047091e8595"
+
+[update]
+[update.modrinth]
+mod-id = "JJz0hMcN"
+version = "XVja0gr3"
