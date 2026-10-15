@@ -1,0 +1,6 @@
+lang:fr_fr
+resourcePacks:["vanilla","mod_resources","file/Goety-FR.zip"]
+particles:2
+renderDistance:10
+key_key.goety.wand:key.keyboard.x
+key_key.lightmanscurrency.open_wallet:key.keyboard.unknown

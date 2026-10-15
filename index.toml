@@ -341,5 +341,10 @@ hash = "3a8e91aecdb602039ba1f7445bbf6b64cc5a46344339a3ffaf3b2e3eb2f5bcbc"
 metafile = true
 
 [[files]]
+file = "options.txt"
+hash = "29faf4b2b5dc565ea82e791c9fc118775453aa29308da8b7a443727e49542b35"
+preserve = true
+
+[[files]]
 file = "resourcepacks/Goety-FR.zip"
 hash = "beedbc43d135818e16fc83a7dd99cf227fb6f65402abfe8967e621079630a6b2"
