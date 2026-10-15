@@ -1,5 +1,5 @@
-key_key.goety.wand:key.keyboard.c
-key_key.goety.focusCircle:key.keyboard.v
+key_key.goety.wand:key.keyboard.v
+key_key.goety.focusCircle:key.keyboard.unknown
 key_key.goety.bag:key.keyboard.n
 key_key.goety.ceaseFire:key.keyboard.unknown
 key_key.goety.dismiss:key.keyboard.unknown
@@ -37,7 +37,7 @@ key_key.neoorigins.skill_1:key.keyboard.j
 key_key.neoorigins.skill_2:key.keyboard.k
 key_key.neoorigins.skill_3:key.keyboard.i
 key_key.neoorigins.skill_4:key.keyboard.o
-key_key.neoorigins.skill_5:key.keyboard.p
+key_key.neoorigins.skill_5:key.keyboard.h
 key_key.neoorigins.skill_6:key.keyboard.keypad.decimal
 key_key.neoorigins.class_skill:key.keyboard.keypad.0
 key_key.neoorigins.view_info:key.keyboard.f6
