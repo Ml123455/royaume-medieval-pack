@@ -45,10 +45,10 @@ key_key.neoorigins.edit_hud:key.keyboard.unknown
 key_key.neoorigins.open_creator:key.keyboard.unknown
 key_key.neoorigins.open_mob_creator:key.keyboard.unknown
 key_key.neoorigins.toggle_night_vision:key.keyboard.f8
-key_key.neoorigins.hotkey.1:key.keyboard.unknown
-key_key.neoorigins.hotkey.2:key.keyboard.unknown
-key_key.neoorigins.hotkey.3:key.keyboard.unknown
-key_key.neoorigins.hotkey.4:key.keyboard.unknown
+key_key.neoorigins.hotkey.1:key.keyboard.g
+key_key.neoorigins.hotkey.2:key.keyboard.b
+key_key.neoorigins.hotkey.3:key.keyboard.y
+key_key.neoorigins.hotkey.4:key.keyboard.f10
 key_key.neoorigins.hotkey.5:key.keyboard.unknown
 key_key.neoorigins.hotkey.6:key.keyboard.unknown
 key_key.neoorigins.hotkey.7:key.keyboard.unknown

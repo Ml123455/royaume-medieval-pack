@@ -342,9 +342,13 @@ metafile = true
 
 [[files]]
 file = "options.txt"
-hash = "ec7100a9052af788d9d5080ba5fa0ae54cfc613f243a22be5b5c7c94a98b3b25"
+hash = "63e7de532969311db96efaf69345c150e80df41259ad180affcb866d65b9c3a5"
 preserve = true
 
 [[files]]
 file = "resourcepacks/Goety-FR.zip"
 hash = "beedbc43d135818e16fc83a7dd99cf227fb6f65402abfe8967e621079630a6b2"
+
+[[files]]
+file = "resourcepacks/Irlae_Armes_RP.zip"
+hash = "b96d9be3266ddbb6a4c7572bcaf87d8cfac2d5d329ded96cd09ab52c9022372e"
