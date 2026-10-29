@@ -151,6 +151,11 @@ hash = "4623bbc102dd3b7648a96569a1ab49b868774d46355b305ac40c4c79ad1c74e2"
 metafile = true
 
 [[files]]
+file = "mods/jei.pw.toml"
+hash = "975be465529c6ef43ff736f0f08a226f0de6a8b9d99fdc289c08f2f814100083"
+metafile = true
+
+[[files]]
 file = "mods/jewelry.pw.toml"
 hash = "720e12b39f4689c6d05fd6bf4661b8e54f7b80f6316bf9db5f3c54f8faf58484"
 metafile = true
@@ -183,6 +188,11 @@ metafile = true
 [[files]]
 file = "mods/medieval-buildings.pw.toml"
 hash = "951f0b0fe4059a784a38e397a43960236acf2b30785420ad4967a7257ca7a09c"
+metafile = true
+
+[[files]]
+file = "mods/mezzconfig.pw.toml"
+hash = "8691a6080607f512d7adbbc1c17911ba83db273a5b5f113711fd8408b8d6a9df"
 metafile = true
 
 [[files]]
