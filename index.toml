@@ -241,6 +241,10 @@ hash = "0ca4e4a6dc001eb5fb81d1817cb8b209e86cb8541a77f6e1de23d92a0e20f45c"
 metafile = true
 
 [[files]]
+file = "mods/royaume-forge-0.3.0.jar"
+hash = "132510d05a46cf83ddf7673eea156b4c6b278ee22b0e2d5626b5bce0cbbe7ef4"
+
+[[files]]
 file = "mods/runes.pw.toml"
 hash = "05c5359a4419b39c0e72c2693f0cda3bc5959520fe42b348d3bd701384491aef"
 metafile = true
